@@ -3,7 +3,7 @@
 #SBATCH --mem 2g
 #SBATCH -t 0-06:00
 #SBATCH -c 10
-#SBATCH -o out_%A_%a.out   # standard output
+#SBATCH -o out_%A_%a.out   # standard output  # A: job ID, a: task ID
 #SBATCH -e err_%A_%a.out   # standard error
 #SBATCH -a 1-10            # array of 10 jobs, with ids 1, 2, ...10
 
