@@ -17,3 +17,6 @@ boot_onestep <- function(i) {
 
 system.time(b_nrep10_c_1 <- t(mcmapply(boot_onestep, 1:10000, mc.cores = 1)))
 system.time(b_nrep10_c_1 <- t(mcmapply(boot_onestep, 1:10000, mc.cores = 10)))
+
+
+$ sbatch --test-only bootstrap1.batch
